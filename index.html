@@ -24,29 +24,30 @@
 
                 <h2 class="killer-line">You <em>know</em> want to.</h2>
             </div>
-            <div class="sign-up-form-div">
-                <form action="#" method="get" class="sign-up-form">
+            <div class="sign-up-form-div right">
+                <form action="/" method="get" class="sign-up-form">
 
                     <fieldset>
                         <h2 class="form-title left">Let's do this!</h2>
                         <div class="left-side-form left">
                             <div class="form-row">
                                 <label for="first-name">First Name</label>
-                                <input type="text" id="first-name" name="user_first-name" required>
+                                <input type="text" id="first-name" name="user_first-name" placeholder="John" required>
                             </div>
                             <div class="form-row">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="user_email" required>
+                                <input type="email" id="email" name="user_email" placeholder="johndoe@example.com" required>
                             </div>
                             <div class="form-row">
                                 <label for="password">Password</label>
-                                <input type="password" id="password" name="user_password" class="error" required>
+                                <input type="password" id="password" name="user_password" class="error"  required>
+                                <span id="message">Hello</span>
                             </div>
                         </div>
                         <div class="right-side-form left">
                             <div class="form-row">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" id="last-name" name="user_last-name" required>
+                                <input type="text" id="last-name" name="user_last-name" placeholder="Doe" required>
                             </div>
                             <div class="form-row">
                                 <label for="phone-number">Phone Number</label>
@@ -59,10 +60,12 @@
                         </div>
 
                     </fieldset>
+
+                    
                 </form>
-            </div>
-            <div class="submit-btn left">
-                <button type="submit">Create Account</button>
+                <div class="submit-btn left">
+                    <button type="submit" onclick="checkPassword()">Create Account</button>
+                </div>
             </div>
             <div class="already-created-account left">
                 <p>Already have an account? </p>
@@ -70,6 +73,7 @@
             </div>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
