@@ -1,6 +1,6 @@
 # Sign-Up-Project
 
-This project was based on the TOP, "Project: Sign-Up Form". The aim of the project was still use the skills we learned in past lessons in making suitable form such as form, input, label, validation, and pseudo classes as well.
+This project was based on the TOP, "Project: Sign-Up Form". The aim of the project was to use the skills we learned in past lessons in making suitable form with form, input, label, validation, and pseudo classes as well. Mimicking the design file as best as possible and adding media queries for mobile devices.
 
 Technologies use were HTML, CSS, and JavaScript.
 
