@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: norseBold;
 }
 
 body{
@@ -23,6 +22,16 @@ input{
     box-sizing: border-box;
     border: none;
     appearance: none;
+}
+
+label,
+button,
+h2,
+p,
+h1,
+a{
+    font-family: norseBold;
+
 }
 
 .container{
@@ -61,7 +70,7 @@ input{
 }
 
 .right-side{
-    width: 60vw;
+    width: 100vw;
     
     display: flex;
     flex-direction: column;
@@ -72,10 +81,11 @@ input{
 .sign-up-description{
     width: 90%;
     font-size: 1rem;
+    padding-top: 90px;
 }
 
 .sign-up-description .killer-line{
-    margin: 40px 0 80px;
+    margin: 40px 0 20px;
 }
 
 .left{
@@ -84,9 +94,10 @@ input{
 
 .sign-up-form-div{
     padding-top: 20px;
-    padding-bottom: 20px;
-    width: 90%;
+    padding-bottom: 0px;
 }
+
+
 fieldset{
     display: flex;
     padding: 20px 0px 20px 0px;
@@ -141,7 +152,9 @@ fieldset{
     border: 2px solid green;
 }
 
-
+.submit-btn{
+    margin-top: 20px;
+}
 
 .submit-btn button{
     font-size: 2rem;
@@ -162,9 +175,23 @@ fieldset{
 .already-created-account{
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 2px;
     font-size: 1.6rem;
     display: flex;
     gap: 20px;
+}
+
+.already-created-account a{
+    color: #596D48;
+    text-decoration: none;
+}
+
+#message{
+    font-size: 1.4rem;
+    margin: 15px 0;
+    display: inline-block;
+    padding: 5px 20px;
+    color: #ffffff;
+    width: 60%;
 }
 
