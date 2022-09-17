@@ -22,6 +22,7 @@ input{
     margin: 0;
     box-sizing: border-box;
     border: none;
+    appearance: none;
 }
 
 .container{
@@ -61,15 +62,11 @@ input{
 
 .right-side{
     width: 60vw;
-    border: 1px solid red;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-flow: column wrap;
-}
-
-.right-side > div{
-    border: 1px solid red;
 }
 
 .sign-up-description{
@@ -93,11 +90,22 @@ input{
 fieldset{
     display: flex;
     padding: 20px 0px 20px 0px;
+    border: none;
+    flex-flow: row wrap;
+    box-shadow: -1px 10px 24px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 24px -7px rgba(0,0,0,0.75);
+}
+
+.form-title{
+    width: 100%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    font-size: 2rem;
 }
 
 .left-side-form,
 .right-side-form{
-    border: 1px solid red;
     flex-grow: 1;
 
 }
@@ -106,14 +114,15 @@ fieldset{
 .right-side-form > div{
     display: flex;
     flex-direction: column;
-    padding: 10px 0px 10px;
-    border: 1px solid red;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .form-row input{
-    padding: 5px;
+    padding: 10px;
     border: 1px solid black;
     border-radius: 3px;
+    width: 60%;
 }
 
 .form-row input:focus{
@@ -121,3 +130,41 @@ fieldset{
     box-shadow: 10px 5px 5px black;
 
 }
+
+.form-row input:invalid,
+.form-row .error:invalid{
+    border: 2px solid red;
+}
+
+.form-row input:valid,
+.form-row .error:valid{
+    border: 2px solid green;
+}
+
+
+
+.submit-btn button{
+    font-size: 2rem;
+    padding: 14px 50px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0 10px;
+    cursor: pointer;
+}
+
+
+.submit-btn button:hover{
+    background-color: #8fac75;
+}
+
+
+.already-created-account{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    display: flex;
+    gap: 20px;
+}
+
